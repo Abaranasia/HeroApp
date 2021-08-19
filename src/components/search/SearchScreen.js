@@ -30,8 +30,6 @@ export const SearchScreen = ( { history }) => {
     //const heroesFilter= heroes; 
     
   
-
-
     const handleSearch = (e) => {
         e.preventDefault();
         //console.log(searchText)
