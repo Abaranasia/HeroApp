@@ -1,0 +1,8 @@
+HeroesApp
+    L AppRouter
+        L LoginScreen
+        L DashboardRouter
+            L MarvelScreen  --> [ GetHeroByPublisher ] --> HeroList --> HeroCard
+            L DCScreen      --> [ GetHeroByPublisher ] --> HeroList --> HeroCard
+            L SearchScreen  --> [ GetHeroByName ] -->  HeroCard // useForm Hook && Query-string
+            L HeroScreen    --> [ GetHeroById ] 
