@@ -4,14 +4,14 @@ import { useLocation } from 'react-router-dom'
 import { useForm } from '../../hooks/useForm'
 import { HeroCard } from '../heroes/HeroCard'
 import { getHerosByName } from '../../selectors/getHerosByName';
-import { heroes } from '../../data/heroes';
+//import { heroes } from '../../data/heroes';
 
 export const SearchScreen = ( { history }) => {
 /** Necesitamos un pequeño paquete para tratar los query strings y realizar las búsquedas de forma eficiente:
  * Query-string --> https://www.npmjs.com/package/query-string */
  
 
-    const location= useLocation();
+    const location= useLocation(); //pequeño hook de react-router-dom para acceder a info de la URL actual
     //console.log(location.search) //nos permite obtener la información asociada a un parámetro de tipo search
     const {q= ''} = queryString.parse(location.search); // esta función nos permite parsear las búsquedas basadas en qs
     //console.log(q)
@@ -19,7 +19,7 @@ export const SearchScreen = ( { history }) => {
    
     
     const [ formValues, handleInputChange ] = useForm({  // Desestructuramos directamente la descripción en el formvalues
-        searchText: q // tomamos la última búsqueda realizada
+        searchText: q // tomamos la última búsqueda realizada, no lo escrito en el input
     })
     const {searchText} = formValues;
 
@@ -33,9 +33,8 @@ export const SearchScreen = ( { history }) => {
     const handleSearch = (e) => {
         e.preventDefault();
         //console.log(searchText)
-        console.log("filtro: ",heroesFiltered);
-        history.push(`?q=${searchText}`) //creamos el query string
-        
+        //console.log("filtro: ",heroesFiltered);
+        history.push(`?q=${searchText}`) //creamos el query string y lo introducimos en el history
     }
     
     return (
