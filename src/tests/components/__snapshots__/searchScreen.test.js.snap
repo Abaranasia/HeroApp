@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en searchScreen Debe llamar al push del history 1`] = `
+<div>
+  <h2>
+    Search Screen
+  </h2>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search form
+      </h4>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="search hero"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7 row"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-danger"
+      >
+        There is no a hero with 
+        joker
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en searchScreen Debe mostrarse con resultado e input con Batman 1`] = `
+<div>
+  <h2>
+    Search Screen
+  </h2>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search form
+      </h4>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="search hero"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7 row"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="card ms-2"
+        style={
+          Object {
+            "maxWidth": 250,
+          }
+        }
+      >
+        <div
+          className="row no-gutters"
+        >
+          <div
+            className=""
+          >
+            <a
+              href="/hero/dc-batman"
+              onClick={[Function]}
+            >
+              <img
+                alt="Batman"
+                className="card-img-top"
+                src="./assets/heroes/dc-batman.jpg"
+              />
+            </a>
+            <div
+              className="card-body"
+            >
+              <h5
+                className="card-title"
+              >
+                Batman
+              </h5>
+              <p
+                className="card-text"
+              >
+                 
+                Bruce Wayne
+                 
+              </p>
+              <a
+                href="/hero/dc-batman"
+                onClick={[Function]}
+              >
+                Más...
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en searchScreen Debe mostrarse con valores por defecto 1`] = `
+<div>
+  <h2>
+    Search Screen
+  </h2>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search form
+      </h4>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="search hero"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn btn-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7 row"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-info"
+      >
+        Search a hero
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en searchScreen Debe mostrarse sin resultados pero input con Joker 1`] = `
+<div>
+  <h2>
+    Search Screen
+  </h2>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search form
+      </h4>
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="search hero"
+          type="text"
+          value="joker"
+        />
+        <button
+          className="btn btn-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7 row"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-danger"
+      >
+        There is no a hero with 
+        joker
+      </div>
+    </div>
+  </div>
+</div>
+`;

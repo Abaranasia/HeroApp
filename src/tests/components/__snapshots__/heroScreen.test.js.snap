@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de heroScreen Debe mostrar la ficha de un heroe recibido por el URL 1`] = `
+<div
+  className="row mt-5 animate__animated animate__fadeInLeft"
+>
+  <div
+    className="col-4"
+  >
+    <img
+      alt="superhero"
+      className="img-thumbnail"
+      src="../assets/heroes/marvel-spider.jpg"
+    />
+  </div>
+  <div
+    className="col-8"
+  >
+    <h3>
+      Spider Man
+    </h3>
+    <ul
+      className="list-gropu list-group-flush"
+    >
+      <li
+        className="list-group-item"
+      >
+         
+        <b>
+          Alter ego: 
+        </b>
+        Peter Parker
+      </li>
+      <li
+        className="list-group-item"
+      >
+         
+        <b>
+          Publisher: 
+        </b>
+         
+        Marvel Comics
+      </li>
+      <li
+        className="list-group-item"
+      >
+        <b>
+          First appearance: 
+        </b>
+        Amazing Fantasy #15
+      </li>
+    </ul>
+    <h5>
+      Characters
+    </h5>
+    <p>
+      Peter Parker
+    </p>
+    <button
+      className="btn btn-outline-info"
+      onClick={[Function]}
+    >
+      Return
+    </button>
+  </div>
+</div>
+`;

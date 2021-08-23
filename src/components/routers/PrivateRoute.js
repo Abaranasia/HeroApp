@@ -7,25 +7,25 @@ export const PrivateRoute = ( {
     isAuthenticated,
     component: Component,
     ...rest //Resto de elementos como path, exact...
-}) => {
+    }) => {
 
-    localStorage.setItem('lastpath', rest.location.pathname)
-    //console.log(rest.location.pathname)
-    /** Vamos a aprovechar el prop location.pathname para registrar 
-     * en localstorage la última ruta visitada por el usuario 
-    */
+        localStorage.setItem('lastpath', rest.location.pathname)
+        //console.log(rest.location.pathname)
+        /** Vamos a aprovechar el prop location.pathname para registrar 
+         * en localstorage la última ruta visitada por el usuario 
+        */
 
-    return (
-        <Route {...rest}
-            component= { (props) => (
-                (isAuthenticated)
-                ? ( <Component { ...props } /> )
-                : ( <Redirect to="/login" /> )
-            )}
-        >
-            
-        </Route>
-    )
+        return (
+            <Route {...rest}
+                component= { (props) => (
+                    (isAuthenticated)
+                    ? ( <Component { ...props } /> )
+                    : ( <Redirect to="/login" /> )
+                )}
+            >
+                
+            </Route>
+        )
 }
 PrivateRoute.propTypes = {
     isAuthenticated: PropTypes.bool.isRequired,

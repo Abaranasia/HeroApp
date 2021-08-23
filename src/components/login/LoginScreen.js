@@ -22,10 +22,6 @@ const { dispatch } = useContext(AuthContext)
         /** replace borra el rastro y no será navegable de vuelta con el botón 
          * atrás del navegador, aunque aquí carga, si hay, un path anterior */
     }
-    
-
-
-
 
     return (
         <div className="container mt-5">

@@ -8,10 +8,12 @@ export const HeroScreen = ({ history }) => {
     
 const hero = getHeroById( heroId );
 
+//console.log('HERO: ',hero);
+
 if (!hero) {
     return <Redirect to="/" />
 }
-console.log(hero)
+
 const {    
         superhero,
         publisher, 
@@ -20,7 +22,7 @@ const {
         characters
      } = hero;
 
-     console.log(hero.superhero);
+     //console.log(hero.superhero);
 
 
      const handleReturn = () => {
@@ -28,8 +30,7 @@ const {
             history.push('/') //por si navegamos en incógnito o directamente con la url pegada
          }else {
             history.goBack();
-         }
-        
+         }   
      }
 
     return (

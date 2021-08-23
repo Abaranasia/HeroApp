@@ -7,18 +7,18 @@ export const PublicRoute = ( {
     isAuthenticated,
     component: Component,
     ...rest //Resto de elementos como path, exact...
-}) => {
-    return (
-        <Route {...rest}
-            component= { (props) => (
-                ( !isAuthenticated )
-                ? ( <Component { ...props } /> )
-                : ( <Redirect to="/" /> )
-            )}
-        >
-            
-        </Route>
-    )
+    }) => {
+        return (
+            <Route {...rest}
+                component= { (props) => (
+                    ( !isAuthenticated )
+                    ? ( <Component { ...props } /> )
+                    : ( <Redirect to="/" /> )
+                )}
+            >
+                
+            </Route>
+        )
 }
 PublicRoute.propTypes = {
     isAuthenticated: PropTypes.bool.isRequired,

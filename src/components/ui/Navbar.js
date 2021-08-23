@@ -4,14 +4,13 @@ import { AuthContext } from '../../auth/AuthContext';
 import { types } from '../../types/types';
 
 
-
 export const Navbar = () => {
 
     const { user, dispatch } = useContext(AuthContext);
     const history = useHistory();
 
     const handleLogout = () => {
-        
+        console.log('click!')
         //<Redirect to="/login" />
         const action = { // defino la acción de añadir
             type: types.logout,
